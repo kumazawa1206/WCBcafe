@@ -94,11 +94,35 @@ img {
 }
 
 #home {
-    background-image: url(/HTML-CSS-Webdesign-5/WCBCafe/images/main-bg.jpg),linear-gradient(#c9ffbf, #ffafbd);
+    background-image: url(/HTML-CSS-Webdesign-5/WCBCafe/images/main-bg.jpg), linear-gradient(#c9ffbf, #ffafbd);
     background-blend-mode: luminosity;
     min-height: 100vh;
 }
 
 #home .page-title {
     text-transform: none;
+}
+
+/* news.html */
+
+#news {
+    background-image: url(/HTML-CSS-Webdesign-5/WCBCafe/images/news-bg.jpg);
+    height: 270px;
+    margin-bottom: 40px;
+}
+
+#news .page-title {
+    text-align: center;
+}
+
+/* news.html　フッター部分 */
+footer {
+    background: #432;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    color: #fff;
+    font-size: 0.875rem;
 }
