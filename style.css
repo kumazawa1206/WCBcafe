@@ -94,7 +94,8 @@ img {
 }
 
 #home {
-    background-image: url(/HTML-CSS-Webdesign-5/WCBCafe/images/main-bg.jpg);
+    background-image: url(/HTML-CSS-Webdesign-5/WCBCafe/images/main-bg.jpg),linear-gradient(#c9ffbf, #ffafbd);
+    background-blend-mode: luminosity;
     min-height: 100vh;
 }
 
