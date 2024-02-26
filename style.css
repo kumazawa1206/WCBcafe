@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* 共通部分 */
+/* -------共通部分------- */
 html {
     font-size: 100%;
 }
@@ -20,19 +20,19 @@ img {
 }
 
 .wrapper {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 4%;
+    max-width: 1100px; /*横幅の最大値*/
+    margin: 0 auto; /*中央に配置*/
+    padding: 0 4%; /*スマホ向けの余白*/
 }
 
-/* HEADER */
+/* ------HEADER------ */
 .logo {
-    width: 210px;
+    width: 210px; /*横幅*/
     margin-top: 14px;
 }
 
 .main-nav {
-    display: flex;
+    display: flex; /*フレックスを使用*/
     font-size: 1.25rem;
     text-transform: uppercase;
     margin-top: 34px;
@@ -47,6 +47,7 @@ img {
     color: #432;
 }
 
+/*カーソルを重ねた時の色の指定*/
 .main-nav a:hover {
     color: #0bd;
 }
@@ -56,12 +57,14 @@ img {
     justify-content: space-between;
 }
 
-/* HOME */
+/* -------HOME------- */
+/*画面中央と余白の指定*/
 .home-content {
     text-align: center;
     margin-top: 10%;
 }
 
+/*pタグへのフォントサイズと余白の指定*/
 .home-content p {
     font-size: 1.125rem;
     margin: 10px 0 42px;
@@ -84,6 +87,7 @@ img {
     padding: 18px 32px;
 }
 
+/*ボタンにカーソルを合わせた時の色を指定*/
 .button:hover {
     background: #0090aa;
 }
@@ -93,6 +97,7 @@ img {
     background-position: center top;
 }
 
+/*背景画像と画面の高さの指定*/
 #home {
     background-image: url(/HTML-CSS-Webdesign-5/WCBCafe/images/main-bg.jpg), linear-gradient(#c9ffbf, #ffafbd);
     background-blend-mode: luminosity;
@@ -103,7 +108,7 @@ img {
     text-transform: none;
 }
 
-/* news.html */
+/* ------news.html------ */
 
 #news {
     background-image: url(/HTML-CSS-Webdesign-5/WCBCafe/images/news-bg.jpg);
@@ -127,14 +132,9 @@ footer p {
     font-size: 0.875rem;
 }
 
-/* 記事部分 */
+/* ------記事部分------ */
 article {
     width: 74%;
-}
-
-/* サイドバー部分 */
-aside {
-    width: 22%;
 }
 
 .news-contents {
@@ -187,4 +187,39 @@ article img {
 
 article p {
     margin-bottom: 1rem;
+}
+
+/* ------サイドバー部分------ */
+aside {
+    width: 22%;
+}
+
+.sub-title {
+    font-size: 1.375rem;
+    padding: 0 8px 8px;
+    border-bottom: 2px #0bd solid;
+    font-weight: normal;
+}
+
+aside p {
+    padding: 12px 10px;
+}
+
+.sub-menu {
+    margin-bottom: 60px;
+    list-style: none;
+}
+
+.sub-menu li {
+    border-bottom: 1px #ddd solid;
+}
+
+.sub-menu a {
+    color: #432;
+    padding: 10px;
+    display: block;
+}
+
+.sub-menu a:hover {
+    color: #0bd;
 }
